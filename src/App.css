@@ -21,7 +21,6 @@ a{
 }
 .home-content{
   width:400px;
-  min-width: 250px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
  
  
@@ -113,4 +112,25 @@ a{
 .active{
   color: #fff;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 400px) {
+  .home-content{
+    width: 250px;
+  }
+  .navbar{
+    padding: 0px 15px;
+  }
+  .list-item{
+    font-size: 14px;
+  }
+  .ant-table{
+    overflow-x: scroll !important;
+  }
+}
+@media screen and (max-width: 500px) {
+ 
+  .ant-table{
+    overflow-x: scroll !important;
+  }
 }
